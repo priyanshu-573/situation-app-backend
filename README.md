@@ -7,7 +7,7 @@ A full-stack web application built with Spring Boot, MySQL, and React.
 ## 🌐 Live Demo
 
 Frontend deployed on Netlify:  
-https://user-management-ui-priyanshu.netlify.app
+https://user-management-priyanshu.netlify.app
 
 ---
 
