@@ -65,6 +65,7 @@ public class UserController {
         return "Application is running successfully!";
     }
 
+    // Post Excel File
     @PostMapping(value = "/upload", consumes = "multipart/form-data")
     public String uploadExcel(@RequestParam("file") MultipartFile file) {
 
@@ -87,13 +88,10 @@ public class UserController {
                 User user = new User();
                 user.setName(row.getCell(0).getStringCellValue());
                 user.setAge((int) row.getCell(1).getNumericCellValue());
-
-                // NEW COLUMNS ADDED ↓
                 user.setEmail(row.getCell(2).getStringCellValue());
                 user.setCity(row.getCell(3).getStringCellValue());
                 user.setOccupation(row.getCell(4).getStringCellValue());
-                // NEW COLUMNS ADDED ↑
-
+                
                 userRepository.save(user);
             }
 

@@ -20,16 +20,12 @@ public class User {
     @Min(value = 1, message = "Age must be greater than 0")
     private Integer age;
 
-    // NEW COLUMNS ADDED ↓
- // ADD THIS ↓
     @Email(message = "Please enter valid email")
     @NotBlank(message = "Email cannot be empty")
-    // ADD THIS ↑
-
     private String email;
+    
     private String city;
     private String occupation;
-    // NEW COLUMNS ADDED ↑
 
     // Getter and Setter for id
     public Long getId() {
@@ -58,7 +54,7 @@ public class User {
         this.age = age;
     }
 
-    // NEW GETTERS AND SETTERS ADDED ↓
+    // Getter and Setter for email
 
     // Getter and Setter for email
     public String getEmail() {
@@ -87,5 +83,4 @@ public class User {
         this.occupation = occupation;
     }
 
-    // NEW GETTERS AND SETTERS ADDED ↑
 }
