@@ -134,8 +134,7 @@ http://localhost:8082/swagger-ui/index.html
 "Here is my React App.jsx code. Add an Edit/Update feature without changing existing structure, so users can update data from the UI."
 
 **Prompt 3:**
-
-"When I delete a user, the ID numbers are skipping. Is this is a bug or expected behavior. Explain why this happens."
+"When I delete a user, the ID numbers are skipping. Is this expected behavior? Explain why this happens."
 ---
 
 ### What I Kept vs Changed vs Wrote Myself
